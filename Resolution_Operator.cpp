@@ -17,7 +17,7 @@ class Name
 // Definition of printname using scope resolution operator :: 
 void Name::printname() 
 { 
-    cout << "Geekname is: " << geekname;  
+    cout << "Geekname is: " <<name;  
 } 
 int main() { 
       
