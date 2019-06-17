@@ -1,35 +1,21 @@
-#include<iostream>
-using namespace std;
-
-class B;
-class A
-{
-    int a;
-    public:
-     void get(){}
-     void show(){a}
-   friend void add(A, B);
-   };
-class B{
-   int b;
-   public:
-    void get(){}
-    void show(){b}
-  friend void add(A, B);
-};
-void add(A obja, B objb)
-{
-  obja.a = obja.a+1;
-}
-
-main()
-{
- A obja;
- B objb;
- obja.get();
- objb.get();
- add(obja, objb);
- obja.show();
- objb.show();
- 
- }
+#include <iostream>    
+using namespace std;    
+class Box    
+{    
+    private:    
+        int length;    
+    public:    
+        Box(): length(0) { }    
+        friend int printLength(Box); //friend function    
+};    
+int printLength(Box b)    
+{    
+   b.length += 10;    
+    return b.length;    
+}    
+int main()    
+{    
+    Box b;    
+    cout<<"Length of box: "<< printLength(b)<<endl;    
+    return 0;    
+}    
