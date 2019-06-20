@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-  vactor<int>v1;
+  vector<int>v1;
   int a = 10;
   int b = 20;
   v1.push_back(a);
