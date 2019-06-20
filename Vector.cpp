@@ -20,3 +20,7 @@ int main()
   for(vector<int>::iterator itr = v1.begin(); itr!= v1.end(); ++itr)
       cout<<*itr<<" ";
 }
+
+# to erase:
+#v1.erase(iterator);
+#v1.erase(start, end);
