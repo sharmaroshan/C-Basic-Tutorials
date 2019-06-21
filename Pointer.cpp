@@ -16,4 +16,12 @@ int main()
 	cout<<ptr1<<endl;
 	cout<<*ptr1<<endl;
 	cout<<**ptr1<<endl;
+	
+	int ***ptr2;
+	ptr2 = &ptr1;
+	cout<<ptr2<<endl;
+	cout<<**ptr2;
+	cout<<***ptr2;
+	
+	return 0;
 }
